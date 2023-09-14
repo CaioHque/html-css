@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+            background-image: linear-gradient(to right, #5E2266, #D34CE5, #E093EA);
+        }
+
+        h1{ 
+            text-align: center;
+            font-family: Verdana, Tahoma, sans-serif;
+            color: #624066;
+        }
+
+        p{ 
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de imagem dinamica</h1>
+    <p>Está conseguindo ver a imagem completa? Tente aumentar o tamanho da sua janela para ver toda imagem</p>
+
+    <picture>
+        <source media="(max-width:500px )" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width:750px )" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="paisagem-g">
+    </picture>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site por varias plataformas diferentes ou apenas aumente e dimimua o tamanho da sua tela</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imgs/imagemp.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imgs/imagemm.png" type="image/png">
+        <img src="imgs/imagemg.png" alt="foto grande">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <h2>Agora vamos ver outra forma de introduzir audio no seu site</h2>
+    <audio preload="metadata" autoplay controls >
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    </audio>
+    
+</body>
+</html>
